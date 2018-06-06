@@ -1,8 +1,8 @@
+;; Created and maintained by Jack Lucas <silverbeard@protonmail.com>
 
 (library
     (redis)
-  (export return-redis-closure redis-init
-  )
+  (export return-redis-closure redis-init)
 
   (import (chezscheme)
           (only (srfi s1 lists) take drop first)
