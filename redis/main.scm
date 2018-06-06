@@ -1,6 +1,4 @@
 
-
-;;;Expand this
 (define-record-type redsock
   (fields name ip port send (mutable receive)))
 
@@ -27,6 +25,7 @@
 
 (define (red-read-integer sock)
   (string->number (red-read-socket sock)))
+
 ;;;Should be turned into a vector version that converts to
 ;;;a string at the last step.
 (define (red-read-socket sock)
@@ -96,8 +95,7 @@
        cmds))
 
 (define (red-pipe-recv sock cmd)
-  (map (lambda (cmd0) (begin
-                        (red-recv sock)))
+  (map (lambda (cmd0) (red-recv sock))
        cmd))
 
 (define (red-operate sock cmd)
