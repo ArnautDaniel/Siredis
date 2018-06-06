@@ -59,7 +59,7 @@ To perform a transaction that increments foo and bar.  Literally all one need do
 
 Si, Redis of course is brand new and has lots of work that needs to be done on it.  Namely the parser should probably be rewritten.  Typechecking might lead to performance hits at the amount I'm doing it too.
 
-##GOALS
+## GOALS
 
 Si, Redis hopes to support the following features eventually!
 
